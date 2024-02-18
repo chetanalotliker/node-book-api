@@ -19,3 +19,5 @@ See demo:
 
 - GET Method: `http://localhost:8080/book`
 - POST Method: `http://localhost:8080/book/1234`
+- PUT Method: `http://localhost:8080/book/1234`
+- DELETE Method: `http://localhost:8080/book`
