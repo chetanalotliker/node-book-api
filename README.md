@@ -1,8 +1,8 @@
 # Node book API
 
-This is Node js project which includes book API POST and GET methods
+This is Node js project which includes book API POST, GET, PUT and DELETE
 
-See demo:
+node-book-api Hosted Link: https://node-book-api.onrender.com
 
 ## Getting Started with Node book api project
 
@@ -17,7 +17,7 @@ See demo:
 
 ### Below book api's are there in the application.
 
-- GET Method: `http://localhost:8080/book`
 - POST Method: `http://localhost:8080/book/1234`
+- GET Method: `http://localhost:8080/book`
 - PUT Method: `http://localhost:8080/book/1234`
 - DELETE Method: `http://localhost:8080/book`

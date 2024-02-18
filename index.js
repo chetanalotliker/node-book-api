@@ -17,6 +17,10 @@ const book = [
     }
 ];
 
+app.get('/', (req, res) => {
+    res.status(200).send("Welcome to node book api")
+})
+
 app.get('/book', (req, res) => {
     res.status(200).send(book)
 })
@@ -34,10 +38,6 @@ app.post('/book/:id', (req, res) => {
     })
 })
 
-app.delete('/book', (req, res) => {
-    res.status(200).send("Book Deleted Successfully")
-})
-
 app.put('/book/:id', (req, res) => {
     const { id } = req.params;
     const { name, author } = req.body;
@@ -49,4 +49,8 @@ app.put('/book/:id', (req, res) => {
     } else {
         res.status(404).send(`Book Not Found`);
     }
+})
+
+app.delete('/book', (req, res) => {
+    res.status(200).send("Book Deleted Successfully")
 })
